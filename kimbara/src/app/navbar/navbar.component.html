@@ -1,11 +1,49 @@
-<div class = "container">
 
-<!-- #docregion mat-menu-trigger-for -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Menu</title>
+</head>
+<body>
+<div id="sidemenu" class="menu-collapsed">
+<div id="header">
+   <div id="title"><span>Kimbara</span></div>
+   <div id="menu-btn">
+   <div class="btn-hamburger"></div>
+   <div class="btn-hamburger"></div>
+   <div class="btn-hamburger"></div>
+   </div>
+</div>
+<div id="profile"> 
+  <div id="photo"><img src="" alt=""></div>
+   <div id="name"><span>Administrador</span></div>
 
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<!-- #enddocregion mat-menu-trigger-for -->
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+</div>
+<div> 
+<div class="item">
+  <a href="">
+      <div class="icon"></div>
+      <div class="title"><span>Galeria</span></div>
+  </a>
+</div>
+<div class="item">
+  <a href="">
+      <div class="icon"></div>
+      <div class="title"><span>Información</span></div>
+  </a>
+</div>
+<div class="item">
+  <a href="">
+      <div class="icon"></div>
+      <div class="title"><span>Eventos</span></div>
+  </a>
+</div>
+<div class="item">
+  <a href="">
+      <div class="icon"></div>
+      <div class="title"><span>Informes</span></div>
+  </a>
+</div>
+<div class="item separator">
+</div>
 </div>
