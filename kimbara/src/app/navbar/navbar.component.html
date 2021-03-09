@@ -1,49 +1,33 @@
-
 <head>
+<title>Menú vertical responsive</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 <title>Menu</title>
 </head>
 <body>
-<div id="sidemenu" class="menu-collapsed">
-<div id="header">
-   <div id="title"><span>Kimbara</span></div>
-   <div id="menu-btn">
-   <div class="btn-hamburger"></div>
-   <div class="btn-hamburger"></div>
-   <div class="btn-hamburger"></div>
-   </div>
-</div>
-<div id="profile"> 
-  <div id="photo"><img src="" alt=""></div>
-   <div id="name"><span>Administrador</span></div>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="./assets/img/660376.png" alt=""></label>
+        <nav class="menu">
+        <ul>
+        <li><a href="">Registro</a></li>
+        <li><a href="">Informes</a></li>
+        <li><a href="">Pagos</a></li>
+        <li><a href="">Galeria</a></li>
+        <li><a href="">Contactos</a></li>
+        </ul>
 
-</div>
-<div> 
-<div class="item">
-  <a href="">
-      <div class="icon"></div>
-      <div class="title"><span>Galeria</span></div>
-  </a>
-</div>
-<div class="item">
-  <a href="">
-      <div class="icon"></div>
-      <div class="title"><span>Información</span></div>
-  </a>
-</div>
-<div class="item">
-  <a href="">
-      <div class="icon"></div>
-      <div class="title"><span>Eventos</span></div>
-  </a>
-</div>
-<div class="item">
-  <a href="">
-      <div class="icon"></div>
-      <div class="title"><span>Informes</span></div>
-  </a>
-</div>
-<div class="item separator">
-</div>
-</div>
+        </nav>
+
+    </header>
+ <script>
+          const btn = document.querySelector('#menu-btn');
+          const menu = document.querySelector('#sidemenu');
+          btn.addEventListener('click', e =>{
+                menu.classList.toggle("menu-expanded");
+                menu.classList.toggle("menu-collapsed");
+                document.querySelector('body').classList.toggle('body-expended');
+          });
+ </script>
+
+ </body>
