@@ -52,3 +52,11 @@ img{
     text-decoration: none;
 
 }
+.menu{
+    background-color:black;
+    color:white;
+    position: fixed;
+    height: 100%; 
+    left: 0;
+    top: 350px;;
+}
