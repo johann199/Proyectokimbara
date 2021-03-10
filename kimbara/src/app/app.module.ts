@@ -5,11 +5,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import{SidenavComponent} from './sidenav/sidenav.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
